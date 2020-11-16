@@ -1,3 +1,5 @@
+// Example curl commands.  If you are using git bash on a PC, use the Mac/Linux 
+
 Mac/Linux
 
 // get all students 
@@ -9,6 +11,7 @@ curl 127.0.0.1:8080/api/students
 // posts to add student 
 curl -X POST --data '{"name":"ali","starID":"a123a"}' -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
 curl -X POST --data '{"name":"zoe", "starID":"z1z"}' -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
+// expect this to fail, no starID
 curl -X POST --data '{"name":"bob"}' -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
 
 // edit student with id = 1 , set present to true 
@@ -33,6 +36,7 @@ curl 127.0.0.1:8080/api/students
 // posts to add student 
 curl -X POST --data "{""name"":""ali"",""starID"":""a123a""}" -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
 curl -X POST --data "{""name"":""zoe"", ""starID"":""z1z""}" -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
+// expect this to fail, no starID
 curl -X POST --data "{""name"":""bob""}" -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
 
 // edit student with id = 1 , set present to true 
