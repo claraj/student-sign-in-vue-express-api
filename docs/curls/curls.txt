@@ -31,7 +31,7 @@ Windows, I hope
 curl 127.0.0.1:8080/api/students
 
 // get student with id = 1
-127.0.0.1:8080/api/students/1
+curl 127.0.0.1:8080/api/students/1
 
 // posts to add student 
 curl -X POST --data "{""name"":""ali"",""starID"":""a123a""}" -H "Content-Type: Application/JSON" 127.0.0.1:8080/api/students
